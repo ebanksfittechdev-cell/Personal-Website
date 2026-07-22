@@ -1,0 +1,136 @@
+.portfolio-section {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  padding: 6rem 2rem;
+  scroll-margin-top: 80px;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 10.5px;
+  top: 180px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  border: 3px solid #0d0d0d;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.4);
+}
+
+.timeline-content {
+  background-color: #161616;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.timeline-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #b0b0b0;
+  line-height: 1.5;
+}
+
+.timeline-date {
+  position: absolute;
+  left: -90px;
+  top: 180px;
+  width: 80px;
+  text-align: right;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  white-space: nowrap;
+}
+
+.live-demo-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ffffff;
+  background-color: #2563eb;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.live-demo-link:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 4rem 1.25rem;
+  }
+
+  .portfolio-title {
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .timeline-line {
+    left: 12px;
+  }
+
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline-dot {
+    left: 3px;
+    top: 0;
+  }
+
+  /* The absolute -90px offset clips off-screen on narrow viewports,
+     so the date becomes an inline label above the card instead. */
+  .timeline-date {
+    position: static;
+    display: block;
+    text-align: left;
+    width: auto;
+    margin-bottom: 0.4rem;
+  }
+
+  .timeline-content {
+    padding: 1.1rem;
+  }
+}

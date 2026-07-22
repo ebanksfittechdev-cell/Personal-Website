@@ -1,0 +1,88 @@
+.home-section {
+  min-height: 100vh;                 /* FIXED: consistent full height */
+  background-size: cover;            /* FIXED */
+  background-repeat: no-repeat;      /* FIXED */
+  background-position: center;
+  background-attachment: fixed;      /* desktop only */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  scroll-margin-top: 80px;
+  padding: 0 1.5rem;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  gap: 1rem;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.home-content p {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 1.6rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #2563eb;
+  transform: scale(1.1);
+}
+
+/* ------------------------------ */
+/* MOBILE FIXES                   */
+/* ------------------------------ */
+
+@media (max-width: 768px) {
+  .home-section {
+    min-height: 100vh;               /* FIXED */
+    background-attachment: scroll;   /* FIXED */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 6rem;               /* FIXED: prevents navbar overlap */
+    padding-bottom: 4rem;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .social-links a {
+    font-size: 1.4rem;
+  }
+}
+
