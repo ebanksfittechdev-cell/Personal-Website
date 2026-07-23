@@ -1,5 +1,5 @@
 .resume-section {
-  min-height: 100vh;
+  min-height: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,6 +14,7 @@
   max-width: 1200px;
   margin: 0 auto;
   gap: 3rem;
+  align-items: stretch;
 }
 
 .resume-side {
@@ -52,6 +53,7 @@
 .embla__container {
   display: flex;
   gap: 1.5rem;
+  align-items: flex-start;
 }
 
 .embla__slide {
